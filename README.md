@@ -5,18 +5,28 @@
 - Tensorflow 1.15.0
 
 ## Data
-- [Amazon Book Data](http://jmcauley.ucsd.edu/data/amazon/)<br/>
+- [Taobao Data](https://tianchi.aliyun.com/dataset/dataDetail?dataId=649&userId=1)
 
-## Getting Started
-
-### Amazon Prepare
-
-
+### Taobao Prepare
+First download [Taobao Data](https://tianchi.aliyun.com/dataset/dataDetail?dataId=649&userId=1) 
+to get "UserBehavior.csv.zip", then execute the following command.
+```
+sh prepare_taobao.sh
+```
 
 ## Running
+```
+python script/train_taobao.py -p train --random_seed 3 --model_type DNN --learn_type FCN
+python script/train_taobao.py -p test --random_seed 3 --model_type DNN --learn_type FCN
+```
+The model_type below had been supported: 
+- DNN
+- DIN
+- DIEN
+- SIM
 
-### Base Model
-The model type below had been supported: 
-### CSAL
-You can train CSAL
+The learn_type below had been supported: 
+- FCN
+- SAL
+- CSAL
 
