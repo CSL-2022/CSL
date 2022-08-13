@@ -1,4 +1,4 @@
-# Cascade Shard Attention Learning for Click-Through Rate Prediction
+# Cascade Shard Learning for Click-Through Rate Prediction
 
 ## Prerequisites
 - Python 2.x
@@ -6,6 +6,7 @@
 
 ## Data
 - [Taobao Data](https://tianchi.aliyun.com/dataset/dataDetail?dataId=649&userId=1)
+- [Amazon Data](http://jmcauley.ucsd.edu/data/amazon/)
 
 ### Taobao Prepare
 First download [Taobao Data](https://tianchi.aliyun.com/dataset/dataDetail?dataId=649&userId=1) 
@@ -27,6 +28,6 @@ The model_type below had been supported:
 
 The learn_type below had been supported: 
 - FCN
-- SAL
-- CSAL
+- SL
+- CSL
 
